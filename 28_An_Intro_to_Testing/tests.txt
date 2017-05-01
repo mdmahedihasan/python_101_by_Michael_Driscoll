@@ -1,0 +1,6 @@
+The following are tests for dtest2.py
+>>> from dtest1 import double
+>>> double(4)
+8
+>>> double(9)
+18
