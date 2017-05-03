@@ -1,5 +1,15 @@
-from distutils.core import setup
-import py2exe
+from cx_Freeze import setup, Executable
 
 
-setup(windows=["test1.py"])
+exe = Executable(
+    script="test1.py",
+    base="Win32GUI"
+)
+
+
+setup(
+    name="wxSampleApp",
+    version="0.1",
+    description="example",
+    executables=[Executable("test1.py")]
+)
